@@ -1,0 +1,6 @@
+{
+  "name": "StudyFlow RPG",
+  "description": "Gerenciador de objetivos de estudo com temática de RPG 16-bit estilo Zelda SNES, avatar pixel art animado, ganho de XP e evolução de níveis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

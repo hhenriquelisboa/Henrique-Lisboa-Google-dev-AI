@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-sans {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  .pixelated {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+  .retro-border {
+    box-shadow: 
+      inset -4px -4px 0px 0px #1e293b,
+      inset 4px 4px 0px 0px #64748b,
+      0 0 0 2px #0f172a;
+  }
+  .retro-border-gold {
+    box-shadow: 
+      inset -4px -4px 0px 0px #b45309,
+      inset 4px 4px 0px 0px #fde047,
+      0 0 0 2px #000000;
+  }
+  .retro-border-emerald {
+    box-shadow: 
+      inset -4px -4px 0px 0px #064e3b,
+      inset 4px 4px 0px 0px #34d399,
+      0 0 0 2px #000000;
+  }
+}
+
+@keyframes pixel-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes sword-gleam {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.animate-pixel-float {
+  animation: pixel-float 2s ease-in-out infinite;
+}
+
+.animate-sword-gleam {
+  animation: sword-gleam 1.6s ease-in-out infinite;
+}
